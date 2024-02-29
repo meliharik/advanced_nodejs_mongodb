@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const schema = mongoose.schema(
+const schema = mongoose.Schema(
   {
     email: {
       type: String,
@@ -21,6 +21,7 @@ const schema = mongoose.schema(
     phone_number: String,
   },
   {
+    versionKey: false,
     timestamps: {
       createdAt: "created_at",
       updatedAt: "updated_at",
